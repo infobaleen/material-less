@@ -1,0 +1,47 @@
+@import "basics";
+p {
+    font-weight: $fontWeightRegular;
+    color: $greySecondary;
+    margin: 16px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: $fontWeightMedium;
+    color: $greyPrimary;
+    margin: 24px 16px 16px 16px;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+hsub {
+    display: block;
+    font-weight: $fontWeightRegular;
+    margin: 24px 16px 16px 16px;
+    color: $greyDisabled;
+    font-size: 1rem;
+}
+
+// The margins between hx and hsub are supposed to be 12px between baseline of the upper
+// and cap height of the lower element.
+// Since margins are calculated from the descender height in html, the resulting margin
+// correction is different for each type of heading (TODO).
+h1+hsub,
+h2+hsub,
+h3+hsub,
+hsub+h1,
+hsub+h2,
+hsub+h3 {
+    margin-top: -10px;
+}

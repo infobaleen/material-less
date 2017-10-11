@@ -1,0 +1,33 @@
+@import "basics";
+table {
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: $greyPrimary;
+    font-size: 0.9rem;
+    tr {
+        border-bottom: 1px solid $greyDivider;
+        height: 48px;
+        th,
+        td {
+            border: none;
+            padding: 0 24px;
+            display: table-cell;
+            text-align: left;
+            vertical-align: middle;
+            border-radius: 2px;
+        }
+    }
+    thead,
+    tfoot {
+        font-size: 0.85rem;
+        color: $greySecondary;
+    }
+    thead tr {
+        height: 64px;
+    }
+    tfoot tr {
+        height: 56px;
+    }
+}

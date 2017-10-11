@@ -1,0 +1,49 @@
+@import "basics";
+// Button
+button {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 0 8px;
+    margin: 8px;
+    line-height: 36px;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: $fontWeightMedium;
+    text-transform: uppercase;
+    color: var(--colorPrimary);
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    &:not(:disabled) {
+        cursor: pointer;
+        &:hover {
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .1);
+        }
+        &:active {
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3);
+        }
+        &[raised]:not(:disabled) {
+            // Set box shadow
+            box-shadow: #{$elevation-standard-box-shadow};
+            &:hover {
+                box-shadow: #{$elevation-standard-box-shadow + ',inset 0 0 0 1000px rgba(0, 0, 0, .1)'};
+            }
+            &:active {
+                box-shadow: #{$elevation-standard-box-shadow + ',inset 0 0 0 1000px rgba(0, 0, 0, .3)'};
+            }
+        }
+    }
+    &:disabled {
+        color: $greyDisabled;
+    }
+    &[colored] {
+        background-color: var(--colorPrimary);
+        &:not(:disabled) {
+            color: white;
+        }
+        &:disabled {
+            background-color: $grey12;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@if not global-variable-exists(__import_basics__) {
+    $__import_basics__: true !global;
+    @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i");
+    $fontWeightRegular: 400 !global;
+    $fontWeightMedium: 500 !global;
+    $fontWeightBold: 700 !global;
+    // Common greys in material design spec
+    $grey87: rgb(33, 33, 33) !global;
+    $grey54: rgb(117, 117, 117) !global;
+    $grey38: rgb(158, 158, 158) !global;
+    $grey12: rgb(224, 224, 224) !global;
+    // Semantic names for greys
+    $greyPrimary: $grey87 !global;
+    $greySecondary: $grey54 !global;
+    $greyDisabled: $grey38 !global;
+    $greyHint: $grey38 !global;
+    $greyDivider: $grey12 !global;
+    // Use CSS variables for primary color, so the user can redeclare them. Use
+    // https://material.io/color to generate the light and dark variants for a given primary 
+     :root {
+        --colorPrimary: #2196F3;
+        --colorPrimaryLight: #6ec6ff;
+        --colorPrimaryDark: #0069c0;
+    }
+    // Standard elevation (2dp) via box-shadow for buttons, cards, etc
+    $elevation-standard-box-shadow: '0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)' !global;
+    // High elevation (16dp) via box-shadow for drawers and modals 
+    $elevation-high-box-shadow: '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)' !global;
+}
