@@ -24,6 +24,6 @@
     }
     // Standard elevation (2dp) via box-shadow for buttons, cards, etc
     $elevation-standard-box-shadow: '0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)' !global;
-    // High elevation (16dp) via box-shadow for drawers and modals 
-    $elevation-high-box-shadow: '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)' !global;
+    // High elevation (4dp) via box-shadow for drawers and modals 
+    $elevation-high-box-shadow: '0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);' !global;
 }
