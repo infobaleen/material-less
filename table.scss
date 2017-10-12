@@ -23,11 +23,8 @@ table {
     tfoot {
         font-size: 0.85rem;
         color: $greySecondary;
-    }
-    thead tr {
-        height: 64px;
-    }
-    tfoot tr {
-        height: 56px;
+        tr {
+            height: 56px;
+        }
     }
 }
