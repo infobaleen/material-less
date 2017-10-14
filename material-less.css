@@ -134,7 +134,6 @@ table {
   table tfoot {
     font-size: 0.85rem;
     color: #757575; }
-  table thead tr {
-    height: 64px; }
-  table tfoot tr {
-    height: 56px; }
+    table thead tr,
+    table tfoot tr {
+      height: 56px; }

@@ -1,2 +1,2 @@
 #!/bin/sh
-sassc all.scss materiallike.css
+sassc all.scss material-less.css

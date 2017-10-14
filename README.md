@@ -1,6 +1,6 @@
-# Materiallike Design
+# Material-less
 
-Developer friendly, CSS only, no JS, no classes, single file implementation of Material Design.
+Developer friendly, CSS only, no JS, no classes, single file style sheet inspired by Material Design.
 
 This style sheet changes the style of standard HTML5 elements to match the Material Design specification closely.
 New elements are introduced to provide components with no HTML5 equivalent.
