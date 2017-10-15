@@ -1,0 +1,37 @@
+@import "_icons";
+input {
+    margin: 8px;
+    &[type="checkbox"] {
+        position: relative;
+        appearance: none;
+        -webkit-appearance: none;
+        width: 16px;
+        height: 16px;
+        outline: none;
+        background-color: white;
+        &::after {
+            width: 21px;
+            height: 21px;
+            font-size: 21px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            @extend %icon;
+            color: $greyPrimary;
+        }
+        &:disabled::after {
+            color: $greyDisabled;
+        }
+        &:not(:checked)::after {
+            content: "check_box_outline_blank";
+        }
+        &:checked::after {
+            content: "check_box";
+        }
+        &:indeterminate::after {
+            content: "indeterminate_check_box";
+        }
+        border-radius: 2px;
+    }
+}

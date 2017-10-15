@@ -1,7 +1,7 @@
-@import "basics";
-// Button
+@import "_variables";
+@import "_font";
 button {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontFamily;
     border: none;
     outline: none;
     border-radius: 2px;
@@ -24,7 +24,6 @@ button {
             box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3);
         }
         &[raised]:not(:disabled) {
-            // Set box shadow
             box-shadow: #{$elevation-standard-box-shadow};
             &:hover {
                 box-shadow: #{$elevation-standard-box-shadow + ',inset 0 0 0 1000px rgba(0, 0, 0, .1)'};

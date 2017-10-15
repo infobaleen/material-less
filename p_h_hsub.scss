@@ -1,5 +1,7 @@
-@import "basics";
+@import "_variables";
+@import "_font";
 p {
+    font-family: $fontFamily;
     font-weight: $fontWeightRegular;
     color: $greySecondary;
     margin: 16px;
@@ -8,6 +10,7 @@ p {
 h1,
 h2,
 h3 {
+    font-family: $fontFamily;
     font-weight: $fontWeightMedium;
     color: $greyPrimary;
     margin: 24px 16px 16px 16px;
@@ -27,6 +30,7 @@ h3 {
 
 hsub {
     display: block;
+    font-family: $fontFamily;
     font-weight: $fontWeightRegular;
     margin: 24px 16px 16px 16px;
     color: $greyDisabled;

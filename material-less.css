@@ -8,7 +8,7 @@
 html {
   color: #757575;
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400; }
 
 body {
@@ -16,7 +16,7 @@ body {
   padding: 0; }
 
 button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   border: none;
   outline: none;
   border-radius: 2px;
@@ -61,6 +61,7 @@ card {
   overflow: auto; }
 
 p {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #757575;
   margin: 16px; }
@@ -68,6 +69,7 @@ p {
 h1,
 h2,
 h3 {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #212121;
   margin: 24px 16px 16px 16px; }
@@ -83,6 +85,7 @@ h3 {
 
 hsub {
   display: block;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin: 24px 16px 16px 16px;
   color: #9e9e9e;
@@ -96,7 +99,7 @@ hsub + h2,
 hsub + h3 {
   margin-top: -10px; }
 
-i {
+i, input[type="checkbox"]::after {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -107,8 +110,11 @@ i {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
+  vertical-align: middle;
   -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
+
+i {
   vertical-align: middle;
   font-size: 1.25em; }
 
@@ -137,3 +143,32 @@ table {
     table thead tr,
     table tfoot tr {
       height: 56px; }
+
+input {
+  margin: 8px; }
+  input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    background-color: white;
+    border-radius: 2px; }
+    input[type="checkbox"]::after {
+      width: 21px;
+      height: 21px;
+      font-size: 21px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #212121; }
+    input[type="checkbox"]:disabled::after {
+      color: #9e9e9e; }
+    input[type="checkbox"]:not(:checked)::after {
+      content: "check_box_outline_blank"; }
+    input[type="checkbox"]:checked::after {
+      content: "check_box"; }
+    input[type="checkbox"]:indeterminate::after {
+      content: "indeterminate_check_box"; }

@@ -1,0 +1,19 @@
+@if not global-variable-exists(__import_icons__) {
+    $__import_icons__: true !global;
+    @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+    %icon {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        vertical-align: middle;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+    }
+}
