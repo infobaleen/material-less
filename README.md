@@ -26,9 +26,7 @@ The style sheet automatically loads the Roboto and Material Icons fonts. There a
 
 ## Supported elements
 
-### Standard HTML elements
-
-The following standard HTML elements are explicitly styled:
+### Standard HTML elements without additional attributes
 
 * html  
 * body
@@ -37,11 +35,9 @@ The following standard HTML elements are explicitly styled:
 * p
 * button
 
-#### New attributes
+### Standard HTML elements with additional attributes
 
-Some standard elements support additional attributes, which further specify their role or the nature of their content.
-
-##### `<button>`
+#### `<button>`
 
 | Attribute | Values | Effect |
 | --- | --- | --- |
@@ -52,11 +48,14 @@ Some standard elements support additional attributes, which further specify thei
 
 The following new elements are defined:
 
-##### `<i>`
-Material Design icons as text characters.
+#### `<i>`
+Material Design icons. Example: `<i>check_circle</i>`.
 
-##### `<card>`
-"card" component. The content blocks defined in the Material Design specification are implemented by:
-*`<h1>` for primary headings with optional `<hsub>` subtitles before or after the heading.
-*`<p>` for supporting text
-*`<button>` for action buttons.
+#### `<hsub>`
+Subtitles. Use before or after `<h1>`, `<h2>`, or `<h3>`.
+
+#### `<card>`
+Card component. The content blocks defined in the Material Design specification are implemented by:
+* `<h1>` for primary headings with optional `<hsub>` subtitles before or after the heading.
+* `<p>` for supporting text
+* `<button>` for action buttons.
