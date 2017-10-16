@@ -81,8 +81,43 @@
                 <td><button raised disabled>button</button></td>
                 <td><button colored raised disabled>button</button></td>
             </tr>
+        </table>
     </card>
+    <card>
+        <h1>Inputs</h1>
+        <hsub>&lt;input&gt;</hsub>
+        <p>Input elements of different types in different states</p>
+        <table>
+            <tr>
+                <th>Type</th>
+                <td>default</td>
+                <td>filled</td>
+                <td>disabled</td>
+            </tr>
+            <tr>
+                <th>checkbox</th>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox" checked></td>
+                <td><input type="checkbox" disabled></td>
+            </tr>
+            <tr>
+                <th>radio</th>
+                <td><input type="radio"></td>
+                <td><input type="radio" checked></td>
+                <td><input type="radio" disabled></td>
+            </tr>
 
+        </table>
+    </card>
+    <card style="--colorPrimary: violet;">
+        <h1>Colors</h1>
+        <hsub>--colorPrimary, --colorPrimaryLight, --colorPrimaryDark</hsub>
+        <p> The primary color, as well as it's light and dark variant are defined as <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">CSS variables</a> CSS variables can be overridden globally (use the <code>:root</code> selector)
+            or per element (as demonstrated in this card).</p>
+        <button colored raised>violet button</button>
+        <button colored raised style="--colorPrimary: tomato;">red button</button>
+        <button colored raised style="--colorPrimary: grey;">grey button</button>
+    </card>
 </body>
 
 </html>
