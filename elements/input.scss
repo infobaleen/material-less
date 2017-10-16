@@ -1,7 +1,8 @@
 @import "../includes/icons";
 input {
     margin: 8px;
-    &[type="checkbox"] {
+    &[type="checkbox"],
+    &[type="radio"] {
         position: relative;
         appearance: none;
         -webkit-appearance: none;
@@ -23,15 +24,20 @@ input {
         &:disabled::after {
             color: $greyDisabled;
         }
-        &:not(:checked)::after {
+        &[type="checkbox"]:not(:checked)::after {
             content: "check_box_outline_blank";
         }
-        &:checked::after {
+        &[type="checkbox"]:checked::after {
             content: "check_box";
         }
-        &:indeterminate::after {
+        &[type="checkbox"]:indeterminate::after {
             content: "indeterminate_check_box";
         }
-        border-radius: 2px;
+        &[type="radio"]:not(:checked)::after {
+            content: "radio_button_unchecked";
+        }
+        &[type="radio"]:checked::after {
+            content: "radio_button_checked";
+        }
     }
 }
