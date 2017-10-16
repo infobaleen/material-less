@@ -53,6 +53,7 @@ button {
 
 card {
   display: block;
+  display: flow-root;
   height: auto;
   border-radius: 2px;
   background-color: white;
