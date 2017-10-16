@@ -5,24 +5,24 @@ Developer friendly, CSS only, no JS, no classes, single file style sheet inspire
 This style sheet changes the style of standard HTML5 elements to match the Material Design specification closely.
 New elements are introduced to provide components with no HTML5 equivalent.
 
+## Demo
+
+Have a look at [demo.html](http://htmlpreview.github.io/?https://github.com/infobaleen/material-less/blob/master/demo.html).
+
 ## Usage
 
-Refer to the `materiallike.css` style sheet in this repository in the `<head>` element of your HTML document:
+Refer to the `material-less.css` style sheet in this repository in the `<head>` element of your HTML document.
 
 ```
 <link rel="stylesheet" href="style.css">
 ```
 
-See `demo.html` for an example.
-
-### Partial usage
-
-The SASS source files are split into small modules, which can be compiled and used individually.
-For correct font styling `html.scss` should be included.
+Alternatively you can use `@import "<path>/material-less.scss";` in your own SASS files.
+Individual components can be selectively included using the respective SASS (e.g. `@import "<path>/button.scss"`) file.
 
 ### Dependencies
 
-The style sheet automatically loads the Roboto and Material Icons fonts. There are no other runtime dependencies.
+The style sheet automatically loads the Roboto and Material Icons fonts. There are no other dependencies.
 
 ## Supported elements
 
