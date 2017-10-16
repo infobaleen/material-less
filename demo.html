@@ -9,25 +9,20 @@
 
 <body>
     <card>
-        <h1>Title</h1>
-        <hsub>Subtitle</hsub>
-        <p>Supporting text in a card. The buttons in this card are enabled.<i>check</i></p>
-        <button>default</button>
-        <button colored>colored</button>
-        <button raised>raised</button>
-        <button colored raised>colored raised</button>
+        <h1>Cards, text and icons</h1>
+        <hsub>&lt;card&gt;, &lt;h1&gt;, &lt;hsub&gt;, &lt;p&gt;, &lt;i&gt;</hsub>
+        <p>Example card contents:</p>
+        <h1>Example title</h1>
+        <hsub>Example subtitle</hsub>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Example icons:<i>check alarm build done done_all note_add</i>
+        </p>
     </card>
     <card>
-        <hsub>Subtitle</hsub>
-        <h1>Title</h1>
-        <p>Supporting text in a card. The buttons in this card are disabled.<i>close</i></p>
-        <button disabled>default</button>
-        <button colored disabled>colored</button>
-        <button raised disabled>raised</button>
-        <button colored raised disabled>colored raised</button>
-    </card>
-    <card>
-        <h1>Card with a table</h1>
+        <h1>Tables</h1>
+        <hsub>&lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</hsub>
+        <p>Example table:</p>
         <table>
             <thead>
                 <tr>
@@ -60,6 +55,34 @@
             <tfoot></tfoot>
         </table>
     </card>
+    <card>
+        <h1>Buttons</h1>
+        <hsub>&lt;button&gt;</hsub>
+        <p>The &lt;button&gt; tag supports additional arguments:</p>
+        <table>
+            <tr>
+                <td></td>
+                <td style="font-style: italic;">default</td>
+                <td>colored</td>
+                <td>raised</td>
+                <td>colored raised</td>
+            </tr>
+            <tr>
+                <td style="font-style: italic;">default</td>
+                <td><button>button</button></td>
+                <td><button colored>button</button></td>
+                <td><button raised>button</button></td>
+                <td><button colored raised>button</button></td>
+            </tr>
+            <tr>
+                <td>disabled</td>
+                <td><button disabled>button</button></td>
+                <td><button colored disabled>button</button></td>
+                <td><button raised disabled>button</button></td>
+                <td><button colored raised disabled>button</button></td>
+            </tr>
+    </card>
+
 </body>
 
 </html>
