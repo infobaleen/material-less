@@ -1,6 +1,11 @@
 @import "../includes/icons";
 @import "../includes/variables";
-input {
+@import "../includes/button";
+input[type="button"] {
+    @extend %button;
+}
+
+input:not([type="button"]) {
     margin: 8px;
     &[type="checkbox"],
     &[type="radio"] {

@@ -37,17 +37,16 @@ The color scheme can be customized CSS variables. Use the `:root` selector to ch
 
 ## Supported elements
 
-### Standard HTML elements without additional attributes
+### Supported HTML elements without additional attributes
 
-* html  
-* body
-* table
-* h1, h2, h3
-* p
-* button
-* input
+* `<html>`
+* `<body>`
+* `<table>`
+* `<h1>`, `<h2>`, `<h3>`
+* `<p>`
+* `<input>` (see `<button>` for `<input type="button">`)
 
-### Standard HTML elements with additional attributes
+### Supported HTML elements with additional attributes
 
 #### `<button>`
 

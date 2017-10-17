@@ -62,13 +62,13 @@
         <table>
             <tr>
                 <td>non-standard attributes</td>
-                <td style="font-style: italic;">default</td>
+                <td style="font-style: italic;">none</td>
                 <td>colored</td>
                 <td>raised</td>
                 <td>colored raised</td>
             </tr>
             <tr>
-                <td style="font-style: italic;">default</td>
+                <td style="font-style: italic;">none</td>
                 <td><button>button</button></td>
                 <td><button colored>button</button></td>
                 <td><button raised>button</button></td>
@@ -139,6 +139,13 @@
                 <td><input type="date" min="2000-01-01" value="2001-01-01"></td>
                 <td><input type="date" min="2000-01-01" disabled></td>
                 <td><input type="date" min="2000-01-01" value="1999-01-01"></td>
+            </tr>
+            <tr>
+                <th>button</th>
+                <td><input type="button" raised></td>
+                <td><input type="button" raised value="value"></td>
+                <td><input type="button" raised value="value" disabled></td>
+                <td></td>
             </tr>
         </table>
     </card>

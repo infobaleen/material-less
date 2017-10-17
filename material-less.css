@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0; }
 
-button {
+button, input[type="button"] {
   font-family: "Roboto", sans-serif;
   border: none;
   outline: none;
@@ -30,25 +30,25 @@ button {
   color: var(--colorPrimary);
   background-color: transparent;
   transition: all 0.2s ease-in-out; }
-  button:not(:disabled) {
+  button:not(:disabled), input[type="button"]:not(:disabled) {
     cursor: pointer; }
-    button:not(:disabled):hover {
+    button:not(:disabled):hover, input[type="button"]:not(:disabled):hover {
       box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1); }
-    button:not(:disabled):active {
+    button:not(:disabled):active, input[type="button"]:not(:disabled):active {
       box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3); }
-    button:not(:disabled)[raised]:not(:disabled) {
+    button:not(:disabled)[raised]:not(:disabled), input[type="button"]:not(:disabled)[raised]:not(:disabled) {
       box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); }
-      button:not(:disabled)[raised]:not(:disabled):hover {
+      button:not(:disabled)[raised]:not(:disabled):hover, input[type="button"]:not(:disabled)[raised]:not(:disabled):hover {
         box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12),inset 0 0 0 1000px rgba(0, 0, 0, .1); }
-      button:not(:disabled)[raised]:not(:disabled):active {
+      button:not(:disabled)[raised]:not(:disabled):active, input[type="button"]:not(:disabled)[raised]:not(:disabled):active {
         box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12),inset 0 0 0 1000px rgba(0, 0, 0, .3); }
-  button:disabled {
+  button:disabled, input[type="button"]:disabled {
     color: #9e9e9e; }
-  button[colored] {
+  button[colored], input[colored][type="button"] {
     background-color: var(--colorPrimary); }
-    button[colored]:not(:disabled) {
+    button[colored]:not(:disabled), input[colored][type="button"]:not(:disabled) {
       color: white; }
-    button[colored]:disabled {
+    button[colored]:disabled, input[colored][type="button"]:disabled {
       background-color: #e0e0e0; }
 
 card {
@@ -100,7 +100,7 @@ hsub + h2,
 hsub + h3 {
   margin-top: -10px; }
 
-i, input[type="checkbox"]::after, input[type="radio"]::after {
+i, input[type="checkbox"]:not([type="button"])::after, input[type="radio"]:not([type="button"])::after {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -145,9 +145,9 @@ table {
     table tfoot tr {
       height: 56px; }
 
-input {
+input:not([type="button"]) {
   margin: 8px; }
-  input[type="checkbox"], input[type="radio"] {
+  input:not([type="button"])[type="checkbox"], input:not([type="button"])[type="radio"] {
     position: relative;
     appearance: none;
     -webkit-appearance: none;
@@ -156,7 +156,7 @@ input {
     height: 16px;
     outline: none;
     background-color: white; }
-    input[type="checkbox"]::after, input[type="radio"]::after {
+    input:not([type="button"])[type="checkbox"]::after, input:not([type="button"])[type="radio"]::after {
       width: 21px;
       height: 21px;
       font-size: 21px;
@@ -165,19 +165,19 @@ input {
       top: 50%;
       transform: translate(-50%, -50%);
       color: #212121; }
-    input[type="checkbox"]:disabled::after, input[type="radio"]:disabled::after {
+    input:not([type="button"])[type="checkbox"]:disabled::after, input:not([type="button"])[type="radio"]:disabled::after {
       color: #9e9e9e; }
-    input[type="checkbox"][type="checkbox"]:not(:checked)::after, input[type="radio"][type="checkbox"]:not(:checked)::after {
+    input:not([type="button"])[type="checkbox"][type="checkbox"]:not(:checked)::after, input:not([type="button"])[type="radio"][type="checkbox"]:not(:checked)::after {
       content: "check_box_outline_blank"; }
-    input[type="checkbox"][type="checkbox"]:checked::after, input[type="radio"][type="checkbox"]:checked::after {
+    input:not([type="button"])[type="checkbox"][type="checkbox"]:checked::after, input:not([type="button"])[type="radio"][type="checkbox"]:checked::after {
       content: "check_box"; }
-    input[type="checkbox"][type="checkbox"]:indeterminate::after, input[type="radio"][type="checkbox"]:indeterminate::after {
+    input:not([type="button"])[type="checkbox"][type="checkbox"]:indeterminate::after, input:not([type="button"])[type="radio"][type="checkbox"]:indeterminate::after {
       content: "indeterminate_check_box"; }
-    input[type="checkbox"][type="radio"]:not(:checked)::after, input[type="radio"][type="radio"]:not(:checked)::after {
+    input:not([type="button"])[type="checkbox"][type="radio"]:not(:checked)::after, input:not([type="button"])[type="radio"][type="radio"]:not(:checked)::after {
       content: "radio_button_unchecked"; }
-    input[type="checkbox"][type="radio"]:checked::after, input[type="radio"][type="radio"]:checked::after {
+    input:not([type="button"])[type="checkbox"][type="radio"]:checked::after, input:not([type="button"])[type="radio"][type="radio"]:checked::after {
       content: "radio_button_checked"; }
-  input:not([type]), input[type="color"], input[type="date"], input[type="datetime-local"], input[type="email"], input[type="file"], input[type="month"], input[type="number"], input[type="password"], input[type="tel"], input[type="text"], input[type="url"], input[type="week"] {
+  input:not([type="button"]):not([type]), input:not([type="button"])[type="color"], input:not([type="button"])[type="date"], input:not([type="button"])[type="datetime-local"], input:not([type="button"])[type="email"], input:not([type="button"])[type="file"], input:not([type="button"])[type="month"], input:not([type="button"])[type="number"], input:not([type="button"])[type="password"], input:not([type="button"])[type="tel"], input:not([type="button"])[type="text"], input:not([type="button"])[type="url"], input:not([type="button"])[type="week"] {
     font-size: 1.15rem;
     appearance: none;
     -webkit-appearance: none;
@@ -189,14 +189,14 @@ input {
     padding: 0 0 4px 0;
     background-color: transparent;
     color: #212121; }
-    input:not([type]):placeholder, input:not([type]):-ms-placeholder, input[type="color"]:placeholder, input[type="color"]:-ms-placeholder, input[type="date"]:placeholder, input[type="date"]:-ms-placeholder, input[type="datetime-local"]:placeholder, input[type="datetime-local"]:-ms-placeholder, input[type="email"]:placeholder, input[type="email"]:-ms-placeholder, input[type="file"]:placeholder, input[type="file"]:-ms-placeholder, input[type="month"]:placeholder, input[type="month"]:-ms-placeholder, input[type="number"]:placeholder, input[type="number"]:-ms-placeholder, input[type="password"]:placeholder, input[type="password"]:-ms-placeholder, input[type="tel"]:placeholder, input[type="tel"]:-ms-placeholder, input[type="text"]:placeholder, input[type="text"]:-ms-placeholder, input[type="url"]:placeholder, input[type="url"]:-ms-placeholder, input[type="week"]:placeholder, input[type="week"]:-ms-placeholder {
+    input:not([type="button"]):not([type]):placeholder, input:not([type="button"]):not([type]):-ms-placeholder, input:not([type="button"])[type="color"]:placeholder, input:not([type="button"])[type="color"]:-ms-placeholder, input:not([type="button"])[type="date"]:placeholder, input:not([type="button"])[type="date"]:-ms-placeholder, input:not([type="button"])[type="datetime-local"]:placeholder, input:not([type="button"])[type="datetime-local"]:-ms-placeholder, input:not([type="button"])[type="email"]:placeholder, input:not([type="button"])[type="email"]:-ms-placeholder, input:not([type="button"])[type="file"]:placeholder, input:not([type="button"])[type="file"]:-ms-placeholder, input:not([type="button"])[type="month"]:placeholder, input:not([type="button"])[type="month"]:-ms-placeholder, input:not([type="button"])[type="number"]:placeholder, input:not([type="button"])[type="number"]:-ms-placeholder, input:not([type="button"])[type="password"]:placeholder, input:not([type="button"])[type="password"]:-ms-placeholder, input:not([type="button"])[type="tel"]:placeholder, input:not([type="button"])[type="tel"]:-ms-placeholder, input:not([type="button"])[type="text"]:placeholder, input:not([type="button"])[type="text"]:-ms-placeholder, input:not([type="button"])[type="url"]:placeholder, input:not([type="button"])[type="url"]:-ms-placeholder, input:not([type="button"])[type="week"]:placeholder, input:not([type="button"])[type="week"]:-ms-placeholder {
       color: #9e9e9e; }
-    input:not([type]):disabled, input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="file"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled {
+    input:not([type="button"]):not([type]):disabled, input:not([type="button"])[type="color"]:disabled, input:not([type="button"])[type="date"]:disabled, input:not([type="button"])[type="datetime-local"]:disabled, input:not([type="button"])[type="email"]:disabled, input:not([type="button"])[type="file"]:disabled, input:not([type="button"])[type="month"]:disabled, input:not([type="button"])[type="number"]:disabled, input:not([type="button"])[type="password"]:disabled, input:not([type="button"])[type="tel"]:disabled, input:not([type="button"])[type="text"]:disabled, input:not([type="button"])[type="url"]:disabled, input:not([type="button"])[type="week"]:disabled {
       color: #9e9e9e;
       border-bottom-style: dashed; }
-    input:not([type]):not(:disabled):hover, input[type="color"]:not(:disabled):hover, input[type="date"]:not(:disabled):hover, input[type="datetime-local"]:not(:disabled):hover, input[type="email"]:not(:disabled):hover, input[type="file"]:not(:disabled):hover, input[type="month"]:not(:disabled):hover, input[type="number"]:not(:disabled):hover, input[type="password"]:not(:disabled):hover, input[type="tel"]:not(:disabled):hover, input[type="text"]:not(:disabled):hover, input[type="url"]:not(:disabled):hover, input[type="week"]:not(:disabled):hover {
+    input:not([type="button"]):not([type]):not(:disabled):hover, input:not([type="button"])[type="color"]:not(:disabled):hover, input:not([type="button"])[type="date"]:not(:disabled):hover, input:not([type="button"])[type="datetime-local"]:not(:disabled):hover, input:not([type="button"])[type="email"]:not(:disabled):hover, input:not([type="button"])[type="file"]:not(:disabled):hover, input:not([type="button"])[type="month"]:not(:disabled):hover, input:not([type="button"])[type="number"]:not(:disabled):hover, input:not([type="button"])[type="password"]:not(:disabled):hover, input:not([type="button"])[type="tel"]:not(:disabled):hover, input:not([type="button"])[type="text"]:not(:disabled):hover, input:not([type="button"])[type="url"]:not(:disabled):hover, input:not([type="button"])[type="week"]:not(:disabled):hover {
       border-bottom-color: #212121; }
-    input:not([type]):not(:disabled):focus, input[type="color"]:not(:disabled):focus, input[type="date"]:not(:disabled):focus, input[type="datetime-local"]:not(:disabled):focus, input[type="email"]:not(:disabled):focus, input[type="file"]:not(:disabled):focus, input[type="month"]:not(:disabled):focus, input[type="number"]:not(:disabled):focus, input[type="password"]:not(:disabled):focus, input[type="tel"]:not(:disabled):focus, input[type="text"]:not(:disabled):focus, input[type="url"]:not(:disabled):focus, input[type="week"]:not(:disabled):focus {
+    input:not([type="button"]):not([type]):not(:disabled):focus, input:not([type="button"])[type="color"]:not(:disabled):focus, input:not([type="button"])[type="date"]:not(:disabled):focus, input:not([type="button"])[type="datetime-local"]:not(:disabled):focus, input:not([type="button"])[type="email"]:not(:disabled):focus, input:not([type="button"])[type="file"]:not(:disabled):focus, input:not([type="button"])[type="month"]:not(:disabled):focus, input:not([type="button"])[type="number"]:not(:disabled):focus, input:not([type="button"])[type="password"]:not(:disabled):focus, input:not([type="button"])[type="tel"]:not(:disabled):focus, input:not([type="button"])[type="text"]:not(:disabled):focus, input:not([type="button"])[type="url"]:not(:disabled):focus, input:not([type="button"])[type="week"]:not(:disabled):focus {
       border-bottom-color: var(--colorPrimary); }
-    input:not([type]):not(:disabled):invalid, input[type="color"]:not(:disabled):invalid, input[type="date"]:not(:disabled):invalid, input[type="datetime-local"]:not(:disabled):invalid, input[type="email"]:not(:disabled):invalid, input[type="file"]:not(:disabled):invalid, input[type="month"]:not(:disabled):invalid, input[type="number"]:not(:disabled):invalid, input[type="password"]:not(:disabled):invalid, input[type="tel"]:not(:disabled):invalid, input[type="text"]:not(:disabled):invalid, input[type="url"]:not(:disabled):invalid, input[type="week"]:not(:disabled):invalid {
+    input:not([type="button"]):not([type]):not(:disabled):invalid, input:not([type="button"])[type="color"]:not(:disabled):invalid, input:not([type="button"])[type="date"]:not(:disabled):invalid, input:not([type="button"])[type="datetime-local"]:not(:disabled):invalid, input:not([type="button"])[type="email"]:not(:disabled):invalid, input:not([type="button"])[type="file"]:not(:disabled):invalid, input:not([type="button"])[type="month"]:not(:disabled):invalid, input:not([type="button"])[type="number"]:not(:disabled):invalid, input:not([type="button"])[type="password"]:not(:disabled):invalid, input:not([type="button"])[type="tel"]:not(:disabled):invalid, input:not([type="button"])[type="text"]:not(:disabled):invalid, input:not([type="button"])[type="url"]:not(:disabled):invalid, input:not([type="button"])[type="week"]:not(:disabled):invalid {
       border-bottom-color: red; }
