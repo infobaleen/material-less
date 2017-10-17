@@ -86,27 +86,60 @@
     <card>
         <h1>Inputs</h1>
         <hsub>&lt;input&gt;</hsub>
-        <p>Input elements of different types in different states</p>
+        <p>Input elements of different types in different states:</p>
         <table>
             <tr>
                 <th>Type</th>
-                <td>default</td>
-                <td>filled</td>
+                <td>empty/unchecked</td>
+                <td>filled/checked</td>
                 <td>disabled</td>
+                <td>invalid/indeterminate</td>
             </tr>
             <tr>
                 <th>checkbox</th>
                 <td><input type="checkbox"></td>
                 <td><input type="checkbox" checked></td>
                 <td><input type="checkbox" disabled></td>
+                <td><input type="checkbox"></td>
+                <script>
+                    document.getElementsByTagName("input")[document.getElementsByTagName("input").length - 1].indeterminate = true;
+                </script>
             </tr>
             <tr>
                 <th>radio</th>
                 <td><input type="radio"></td>
                 <td><input type="radio" checked></td>
                 <td><input type="radio" disabled></td>
+                <td></td>
             </tr>
-
+            <tr>
+                <th>text</th>
+                <td><input placeholder="no digits" pattern="[^\d]*"></td>
+                <td><input placeholder="no digits" pattern="[^\d]*" value="example"></td>
+                <td><input placeholder="no digits" pattern="[^\d]*" disabled></td>
+                <td><input placeholder="no digits" pattern="[^\d]*" value="3x4mpl3"></td>
+            </tr>
+            <tr>
+                <th>number</th>
+                <td><input type="number" placeholder="0-9" min="0" max="9"></td>
+                <td><input type="number" placeholder="0-9" min="0" max="9" value="5"></td>
+                <td><input type="number" placeholder="0-9" min="0" max="9" disabled></td>
+                <td><input type="number" placeholder="0-9" min="0" max="9" value="10"></td>
+            </tr>
+            <tr>
+                <th>email</th>
+                <td><input type="email" placeholder="email"></td>
+                <td><input type="email" placeholder="email" value="mail@example.com"></td>
+                <td><input type="email" placeholder="email" disabled></td>
+                <td><input type="email" placeholder="email" value="mail.example.com"></td>
+            </tr>
+            <tr>
+                <th>date</th>
+                <td><input type="date" min="2000-01-01"></td>
+                <td><input type="date" min="2000-01-01" value="2001-01-01"></td>
+                <td><input type="date" min="2000-01-01" disabled></td>
+                <td><input type="date" min="2000-01-01" value="1999-01-01"></td>
+            </tr>
         </table>
     </card>
     <card style="--colorPrimary: violet;">

@@ -1,4 +1,5 @@
 @import "../includes/icons";
+@import "../includes/variables";
 input {
     margin: 8px;
     &[type="checkbox"],
@@ -6,6 +7,7 @@ input {
         position: relative;
         appearance: none;
         -webkit-appearance: none;
+        -moz-appearance: none;
         width: 16px;
         height: 16px;
         outline: none;
@@ -38,6 +40,51 @@ input {
         }
         &[type="radio"]:checked::after {
             content: "radio_button_checked";
+        }
+    }
+    &:not([type]),
+    &[type="color"],
+    &[type="date"],
+    &[type="datetime-local"],
+    &[type="email"],
+    &[type="file"],
+    &[type="month"],
+    &[type="number"],
+    &[type="password"],
+    &[type="tel"],
+    &[type="text"],
+    &[type="url"],
+    &[type="week"] {
+        font-size: 1.15rem;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        border-bottom: 1.5px solid $grey38;
+        padding: 0 0 4px 0;
+        background-color: transparent;
+        color: $greyPrimary;
+        &:placeholder,
+        &:-ms-placeholder,
+        {
+            color: $greyDisabled;
+        }
+        &:disabled {
+            color: $greyDisabled;
+            border-bottom-style: dashed;
+        }
+        &:not(:disabled) {
+            &:hover {
+                border-bottom-color: $greyPrimary;
+            }
+            &:focus {
+                border-bottom-color: var(--colorPrimary);
+            }
+            &:invalid {
+                border-bottom-color: red;
+            }
         }
     }
 }
