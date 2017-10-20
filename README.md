@@ -39,12 +39,14 @@ The color scheme can be customized CSS variables. Use the `:root` selector to ch
 
 ### Supported HTML elements without additional attributes
 
-* `<html>`
 * `<body>`
-* `<table>`
+* `<details>`
+* `<html>`
 * `<h1>`, `<h2>`, `<h3>`
-* `<p>`
 * `<input>` (see `<button>` for `<input type="button">`)
+* `<p>`
+* `<table>`
+
 
 ### Supported HTML elements with additional attributes
 

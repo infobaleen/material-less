@@ -1,0 +1,30 @@
+@import "../includes/icons";
+@import "../includes/variables";
+@import "../includes/font";
+details {
+    &>summary {
+        outline: none;
+        color: $greyPrimary;
+        font-size: 1.1rem;
+        line-height: 48px;
+        vertical-align: middle;
+        &::-webkit-details-marker {
+            display: none;
+        }
+        &::before {
+            // TODO: Not happy about adding ::before element to show the icon, because the user may want to use ::before himself.
+            // Once a cross browser standard emerged the ::after element should be removed or move inside the actual markers pseudo-element.
+            padding: 12px;
+            @extend %icon;
+            content: "expand_more";
+            font-size: 24px;
+        }
+    }
+    &[open] {
+        &>summary {
+            &::before {
+                content: "expand_less";
+            }
+        }
+    }
+}

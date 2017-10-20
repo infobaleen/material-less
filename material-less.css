@@ -100,7 +100,7 @@ hsub + h2,
 hsub + h3 {
   margin-top: -10px; }
 
-i, input[type="checkbox"]:not([type="button"])::after, input[type="radio"]:not([type="button"])::after {
+i, input[type="checkbox"]:not([type="button"])::after, input[type="radio"]:not([type="button"])::after, details > summary::before {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -200,3 +200,19 @@ input:not([type="button"]) {
       border-bottom-color: var(--colorPrimary); }
     input:not([type="button"]):not([type]):not(:disabled):invalid, input:not([type="button"])[type="color"]:not(:disabled):invalid, input:not([type="button"])[type="date"]:not(:disabled):invalid, input:not([type="button"])[type="datetime-local"]:not(:disabled):invalid, input:not([type="button"])[type="email"]:not(:disabled):invalid, input:not([type="button"])[type="file"]:not(:disabled):invalid, input:not([type="button"])[type="month"]:not(:disabled):invalid, input:not([type="button"])[type="number"]:not(:disabled):invalid, input:not([type="button"])[type="password"]:not(:disabled):invalid, input:not([type="button"])[type="tel"]:not(:disabled):invalid, input:not([type="button"])[type="text"]:not(:disabled):invalid, input:not([type="button"])[type="url"]:not(:disabled):invalid, input:not([type="button"])[type="week"]:not(:disabled):invalid {
       border-bottom-color: red; }
+
+details > summary {
+  outline: none;
+  color: #212121;
+  font-size: 1.1rem;
+  line-height: 48px;
+  vertical-align: middle; }
+  details > summary::-webkit-details-marker {
+    display: none; }
+  details > summary::before {
+    padding: 12px;
+    content: "expand_more";
+    font-size: 24px; }
+
+details[open] > summary::before {
+  content: "expand_less"; }
