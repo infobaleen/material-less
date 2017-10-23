@@ -1,6 +1,7 @@
 @import "../includes/icons";
 @import "../includes/variables";
 @import "../includes/button";
+@import "../includes/input";
 input[type="button"] {
     @extend %button;
 }
@@ -60,36 +61,10 @@ input:not([type="button"]) {
     &[type="text"],
     &[type="url"],
     &[type="week"] {
-        font-size: 1.15rem;
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
-        outline: none;
-        border: none;
-        box-sizing: border-box;
-        border-bottom: 1.5px solid $grey38;
-        padding: 0 0 4px 0;
-        background-color: transparent;
-        color: $greyPrimary;
-        &:placeholder,
-        &:-ms-placeholder,
-        {
-            color: $greyDisabled;
-        }
-        &:disabled {
-            color: $greyDisabled;
-            border-bottom-style: dashed;
-        }
-        &:not(:disabled) {
-            &:hover {
-                border-bottom-color: $greyPrimary;
-            }
-            &:focus {
-                border-bottom-color: var(--colorPrimary);
-            }
-            &:invalid {
-                border-bottom-color: red;
-            }
-        }
+        @extend %fontinput;
+        @extend %textinput;
     }
 }

@@ -45,6 +45,7 @@ The color scheme can be customized CSS variables. Use the `:root` selector to ch
 * `<h1>`, `<h2>`, `<h3>`
 * `<input>` (see `<button>` for `<input type="button">`)
 * `<p>`
+* `<select>`
 * `<table>`
 
 

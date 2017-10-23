@@ -145,6 +145,30 @@ table {
     table tfoot tr {
       height: 56px; }
 
+input:not([type="button"]):not([type]), input[type="color"]:not([type="button"]), input[type="date"]:not([type="button"]), input[type="datetime-local"]:not([type="button"]), input[type="email"]:not([type="button"]), input[type="file"]:not([type="button"]), input[type="month"]:not([type="button"]), input[type="number"]:not([type="button"]), input[type="password"]:not([type="button"]), input[type="tel"]:not([type="button"]), input[type="text"]:not([type="button"]), input[type="url"]:not([type="button"]), input[type="week"]:not([type="button"]), select {
+  font-size: 1.15rem;
+  color: #212121; }
+  input:disabled:not([type="button"]):not([type]), input[type="color"]:disabled:not([type="button"]), input[type="date"]:disabled:not([type="button"]), input[type="datetime-local"]:disabled:not([type="button"]), input[type="email"]:disabled:not([type="button"]), input[type="file"]:disabled:not([type="button"]), input[type="month"]:disabled:not([type="button"]), input[type="number"]:disabled:not([type="button"]), input[type="password"]:disabled:not([type="button"]), input[type="tel"]:disabled:not([type="button"]), input[type="text"]:disabled:not([type="button"]), input[type="url"]:disabled:not([type="button"]), input[type="week"]:disabled:not([type="button"]), select:disabled {
+    color: #9e9e9e; }
+
+input:not([type="button"]):not([type]), input[type="color"]:not([type="button"]), input[type="date"]:not([type="button"]), input[type="datetime-local"]:not([type="button"]), input[type="email"]:not([type="button"]), input[type="file"]:not([type="button"]), input[type="month"]:not([type="button"]), input[type="number"]:not([type="button"]), input[type="password"]:not([type="button"]), input[type="tel"]:not([type="button"]), input[type="text"]:not([type="button"]), input[type="url"]:not([type="button"]), input[type="week"]:not([type="button"]), select:not([multiple]) {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 1.5px solid #9e9e9e;
+  padding: 0 0 4px 0;
+  background-color: transparent; }
+  input:placeholder:not([type="button"]):not([type]), input[type="color"]:placeholder:not([type="button"]), input[type="date"]:placeholder:not([type="button"]), input[type="datetime-local"]:placeholder:not([type="button"]), input[type="email"]:placeholder:not([type="button"]), input[type="file"]:placeholder:not([type="button"]), input[type="month"]:placeholder:not([type="button"]), input[type="number"]:placeholder:not([type="button"]), input[type="password"]:placeholder:not([type="button"]), input[type="tel"]:placeholder:not([type="button"]), input[type="text"]:placeholder:not([type="button"]), input[type="url"]:placeholder:not([type="button"]), input[type="week"]:placeholder:not([type="button"]), select:placeholder:not([multiple]), input:-ms-placeholder:not([type="button"]):not([type]), input[type="color"]:-ms-placeholder:not([type="button"]), input[type="date"]:-ms-placeholder:not([type="button"]), input[type="datetime-local"]:-ms-placeholder:not([type="button"]), input[type="email"]:-ms-placeholder:not([type="button"]), input[type="file"]:-ms-placeholder:not([type="button"]), input[type="month"]:-ms-placeholder:not([type="button"]), input[type="number"]:-ms-placeholder:not([type="button"]), input[type="password"]:-ms-placeholder:not([type="button"]), input[type="tel"]:-ms-placeholder:not([type="button"]), input[type="text"]:-ms-placeholder:not([type="button"]), input[type="url"]:-ms-placeholder:not([type="button"]), input[type="week"]:-ms-placeholder:not([type="button"]), select:-ms-placeholder:not([multiple]) {
+    color: #9e9e9e; }
+  input:disabled:not([type="button"]):not([type]), input[type="color"]:disabled:not([type="button"]), input[type="date"]:disabled:not([type="button"]), input[type="datetime-local"]:disabled:not([type="button"]), input[type="email"]:disabled:not([type="button"]), input[type="file"]:disabled:not([type="button"]), input[type="month"]:disabled:not([type="button"]), input[type="number"]:disabled:not([type="button"]), input[type="password"]:disabled:not([type="button"]), input[type="tel"]:disabled:not([type="button"]), input[type="text"]:disabled:not([type="button"]), input[type="url"]:disabled:not([type="button"]), input[type="week"]:disabled:not([type="button"]), select:disabled:not([multiple]) {
+    border-bottom-style: dashed; }
+  input:not(:disabled):hover:not([type="button"]):not([type]), input[type="color"]:not(:disabled):hover:not([type="button"]), input[type="date"]:not(:disabled):hover:not([type="button"]), input[type="datetime-local"]:not(:disabled):hover:not([type="button"]), input[type="email"]:not(:disabled):hover:not([type="button"]), input[type="file"]:not(:disabled):hover:not([type="button"]), input[type="month"]:not(:disabled):hover:not([type="button"]), input[type="number"]:not(:disabled):hover:not([type="button"]), input[type="password"]:not(:disabled):hover:not([type="button"]), input[type="tel"]:not(:disabled):hover:not([type="button"]), input[type="text"]:not(:disabled):hover:not([type="button"]), input[type="url"]:not(:disabled):hover:not([type="button"]), input[type="week"]:not(:disabled):hover:not([type="button"]), select:not(:disabled):hover:not([multiple]) {
+    border-bottom-color: #212121; }
+  input:not(:disabled):focus:not([type="button"]):not([type]), input[type="color"]:not(:disabled):focus:not([type="button"]), input[type="date"]:not(:disabled):focus:not([type="button"]), input[type="datetime-local"]:not(:disabled):focus:not([type="button"]), input[type="email"]:not(:disabled):focus:not([type="button"]), input[type="file"]:not(:disabled):focus:not([type="button"]), input[type="month"]:not(:disabled):focus:not([type="button"]), input[type="number"]:not(:disabled):focus:not([type="button"]), input[type="password"]:not(:disabled):focus:not([type="button"]), input[type="tel"]:not(:disabled):focus:not([type="button"]), input[type="text"]:not(:disabled):focus:not([type="button"]), input[type="url"]:not(:disabled):focus:not([type="button"]), input[type="week"]:not(:disabled):focus:not([type="button"]), select:not(:disabled):focus:not([multiple]) {
+    border-bottom-color: var(--colorPrimary); }
+  input:not(:disabled):invalid:not([type="button"]):not([type]), input[type="color"]:not(:disabled):invalid:not([type="button"]), input[type="date"]:not(:disabled):invalid:not([type="button"]), input[type="datetime-local"]:not(:disabled):invalid:not([type="button"]), input[type="email"]:not(:disabled):invalid:not([type="button"]), input[type="file"]:not(:disabled):invalid:not([type="button"]), input[type="month"]:not(:disabled):invalid:not([type="button"]), input[type="number"]:not(:disabled):invalid:not([type="button"]), input[type="password"]:not(:disabled):invalid:not([type="button"]), input[type="tel"]:not(:disabled):invalid:not([type="button"]), input[type="text"]:not(:disabled):invalid:not([type="button"]), input[type="url"]:not(:disabled):invalid:not([type="button"]), input[type="week"]:not(:disabled):invalid:not([type="button"]), select:not(:disabled):invalid:not([multiple]) {
+    border-bottom-color: red; }
+
 input:not([type="button"]) {
   margin: 8px; }
   input:not([type="button"])[type="checkbox"], input:not([type="button"])[type="radio"] {
@@ -178,28 +202,9 @@ input:not([type="button"]) {
     input:not([type="button"])[type="checkbox"][type="radio"]:checked::after, input:not([type="button"])[type="radio"][type="radio"]:checked::after {
       content: "radio_button_checked"; }
   input:not([type="button"]):not([type]), input:not([type="button"])[type="color"], input:not([type="button"])[type="date"], input:not([type="button"])[type="datetime-local"], input:not([type="button"])[type="email"], input:not([type="button"])[type="file"], input:not([type="button"])[type="month"], input:not([type="button"])[type="number"], input:not([type="button"])[type="password"], input:not([type="button"])[type="tel"], input:not([type="button"])[type="text"], input:not([type="button"])[type="url"], input:not([type="button"])[type="week"] {
-    font-size: 1.15rem;
     appearance: none;
     -webkit-appearance: none;
-    -moz-appearance: none;
-    outline: none;
-    border: none;
-    box-sizing: border-box;
-    border-bottom: 1.5px solid #9e9e9e;
-    padding: 0 0 4px 0;
-    background-color: transparent;
-    color: #212121; }
-    input:not([type="button"]):not([type]):placeholder, input:not([type="button"]):not([type]):-ms-placeholder, input:not([type="button"])[type="color"]:placeholder, input:not([type="button"])[type="color"]:-ms-placeholder, input:not([type="button"])[type="date"]:placeholder, input:not([type="button"])[type="date"]:-ms-placeholder, input:not([type="button"])[type="datetime-local"]:placeholder, input:not([type="button"])[type="datetime-local"]:-ms-placeholder, input:not([type="button"])[type="email"]:placeholder, input:not([type="button"])[type="email"]:-ms-placeholder, input:not([type="button"])[type="file"]:placeholder, input:not([type="button"])[type="file"]:-ms-placeholder, input:not([type="button"])[type="month"]:placeholder, input:not([type="button"])[type="month"]:-ms-placeholder, input:not([type="button"])[type="number"]:placeholder, input:not([type="button"])[type="number"]:-ms-placeholder, input:not([type="button"])[type="password"]:placeholder, input:not([type="button"])[type="password"]:-ms-placeholder, input:not([type="button"])[type="tel"]:placeholder, input:not([type="button"])[type="tel"]:-ms-placeholder, input:not([type="button"])[type="text"]:placeholder, input:not([type="button"])[type="text"]:-ms-placeholder, input:not([type="button"])[type="url"]:placeholder, input:not([type="button"])[type="url"]:-ms-placeholder, input:not([type="button"])[type="week"]:placeholder, input:not([type="button"])[type="week"]:-ms-placeholder {
-      color: #9e9e9e; }
-    input:not([type="button"]):not([type]):disabled, input:not([type="button"])[type="color"]:disabled, input:not([type="button"])[type="date"]:disabled, input:not([type="button"])[type="datetime-local"]:disabled, input:not([type="button"])[type="email"]:disabled, input:not([type="button"])[type="file"]:disabled, input:not([type="button"])[type="month"]:disabled, input:not([type="button"])[type="number"]:disabled, input:not([type="button"])[type="password"]:disabled, input:not([type="button"])[type="tel"]:disabled, input:not([type="button"])[type="text"]:disabled, input:not([type="button"])[type="url"]:disabled, input:not([type="button"])[type="week"]:disabled {
-      color: #9e9e9e;
-      border-bottom-style: dashed; }
-    input:not([type="button"]):not([type]):not(:disabled):hover, input:not([type="button"])[type="color"]:not(:disabled):hover, input:not([type="button"])[type="date"]:not(:disabled):hover, input:not([type="button"])[type="datetime-local"]:not(:disabled):hover, input:not([type="button"])[type="email"]:not(:disabled):hover, input:not([type="button"])[type="file"]:not(:disabled):hover, input:not([type="button"])[type="month"]:not(:disabled):hover, input:not([type="button"])[type="number"]:not(:disabled):hover, input:not([type="button"])[type="password"]:not(:disabled):hover, input:not([type="button"])[type="tel"]:not(:disabled):hover, input:not([type="button"])[type="text"]:not(:disabled):hover, input:not([type="button"])[type="url"]:not(:disabled):hover, input:not([type="button"])[type="week"]:not(:disabled):hover {
-      border-bottom-color: #212121; }
-    input:not([type="button"]):not([type]):not(:disabled):focus, input:not([type="button"])[type="color"]:not(:disabled):focus, input:not([type="button"])[type="date"]:not(:disabled):focus, input:not([type="button"])[type="datetime-local"]:not(:disabled):focus, input:not([type="button"])[type="email"]:not(:disabled):focus, input:not([type="button"])[type="file"]:not(:disabled):focus, input:not([type="button"])[type="month"]:not(:disabled):focus, input:not([type="button"])[type="number"]:not(:disabled):focus, input:not([type="button"])[type="password"]:not(:disabled):focus, input:not([type="button"])[type="tel"]:not(:disabled):focus, input:not([type="button"])[type="text"]:not(:disabled):focus, input:not([type="button"])[type="url"]:not(:disabled):focus, input:not([type="button"])[type="week"]:not(:disabled):focus {
-      border-bottom-color: var(--colorPrimary); }
-    input:not([type="button"]):not([type]):not(:disabled):invalid, input:not([type="button"])[type="color"]:not(:disabled):invalid, input:not([type="button"])[type="date"]:not(:disabled):invalid, input:not([type="button"])[type="datetime-local"]:not(:disabled):invalid, input:not([type="button"])[type="email"]:not(:disabled):invalid, input:not([type="button"])[type="file"]:not(:disabled):invalid, input:not([type="button"])[type="month"]:not(:disabled):invalid, input:not([type="button"])[type="number"]:not(:disabled):invalid, input:not([type="button"])[type="password"]:not(:disabled):invalid, input:not([type="button"])[type="tel"]:not(:disabled):invalid, input:not([type="button"])[type="text"]:not(:disabled):invalid, input:not([type="button"])[type="url"]:not(:disabled):invalid, input:not([type="button"])[type="week"]:not(:disabled):invalid {
-      border-bottom-color: red; }
+    -moz-appearance: none; }
 
 details > summary {
   outline: none;
@@ -216,3 +221,6 @@ details > summary {
 
 details[open] > summary::before {
   content: "expand_less"; }
+
+select {
+  outline: none; }

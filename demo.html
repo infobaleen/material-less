@@ -61,7 +61,7 @@
         <p>The &lt;button&gt; tag supports some non-standard attributes:</p>
         <table>
             <tr>
-                <td>non-standard attributes</td>
+                <td>attributes</td>
                 <td style="font-style: italic;">none</td>
                 <td>colored</td>
                 <td>raised</td>
@@ -145,6 +145,31 @@
                 <td><input type="button" raised></td>
                 <td><input type="button" raised value="value"></td>
                 <td><input type="button" raised value="value" disabled></td>
+                <td></td>
+            </tr>
+        </table>
+    </card>
+    <card>
+        <h1>Select</h1>
+        <hsub>&lt;select&gt;</hsub>
+        <p>Select elements in different states:</p>
+        <table>
+            <tr>
+                <td>attribute/state</td>
+                <td>default</td>
+                <td>disabled</td>
+                <td>invalid</td>
+            </tr>
+            <tr>
+                <td style="font-style: italic;">none</td>
+                <td><select><option>a</option><option>b</option><option>c</option></select></td>
+                <td><select disabled><option>a</option><option>b</option><option>c</option></select></td>
+                <td><select required><option value="" disabled selected>a</option><option>b</option><option>c</option></select></td>
+            </tr>
+            <tr>
+                <td style="font-style: italic;">multiple</td>
+                <td><select multiple><option>a</option><option>b</option><option>c</option></select></td>
+                <td><select multiple disabled><option>a</option><option>b</option><option>c</option></select></td>
                 <td></td>
             </tr>
         </table>

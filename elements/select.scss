@@ -1,0 +1,8 @@
+@import "../includes/input";
+select {
+    @extend %fontinput;
+    outline: none;
+    &:not([multiple]) {
+        @extend %textinput;
+    }
+}
