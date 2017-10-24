@@ -9,10 +9,14 @@ table {
     border-spacing: 0;
     color: $greyPrimary;
     font-size: 0.9rem;
+    tr:not(:last-of-type),
+    thead>tr {
+        border-bottom: 1px solid $greyDivider;
+    }
+    tfoot>tr {
+        border-top: 1px solid $greyDivider;
+    }
     tr {
-        &:not(:last-of-type) {
-            border-bottom: 1px solid $greyDivider;
-        }
         height: 48px;
         th,
         td {
