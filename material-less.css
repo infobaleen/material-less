@@ -62,10 +62,10 @@ card {
   overflow: visible; }
 
 p {
-  margin: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #757575; }
+  color: #757575;
+  margin: 16px; }
 
 h1,
 h2,
@@ -127,23 +127,26 @@ table {
   color: #212121;
   font-size: 0.9rem; }
   table tr {
-    border-bottom: 1px solid #e0e0e0;
     height: 48px; }
+    table tr:not(:last-of-type) {
+      border-bottom: 1px solid #e0e0e0; }
     table tr th,
     table tr td {
+      font-weight: 400;
       border: none;
       padding: 0 24px;
       display: table-cell;
       text-align: left;
       vertical-align: middle;
       border-radius: 2px; }
-  table thead,
-  table tfoot {
+  table thead > tr > td,
+  table tfoot > tr > td,
+  table th {
     font-size: 0.85rem;
     color: #757575; }
-    table thead tr,
-    table tfoot tr {
-      height: 56px; }
+  table thead tr,
+  table tfoot tr {
+    height: 56px; }
 
 input:not([type="button"]):not([type]), input[type="color"]:not([type="button"]), input[type="date"]:not([type="button"]), input[type="datetime-local"]:not([type="button"]), input[type="email"]:not([type="button"]), input[type="file"]:not([type="button"]), input[type="month"]:not([type="button"]), input[type="number"]:not([type="button"]), input[type="password"]:not([type="button"]), input[type="tel"]:not([type="button"]), input[type="text"]:not([type="button"]), input[type="url"]:not([type="button"]), input[type="week"]:not([type="button"]), select {
   font-size: 1.15rem;

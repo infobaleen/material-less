@@ -1,4 +1,5 @@
 @import "../includes/variables";
+@import "../includes/font";
 table {
     margin: 0;
     width: 100%;
@@ -7,10 +8,13 @@ table {
     color: $greyPrimary;
     font-size: 0.9rem;
     tr {
-        border-bottom: 1px solid $greyDivider;
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $greyDivider;
+        }
         height: 48px;
         th,
         td {
+            font-weight: $fontWeightRegular;
             border: none;
             padding: 0 24px;
             display: table-cell;
@@ -19,10 +23,14 @@ table {
             border-radius: 2px;
         }
     }
-    thead,
-    tfoot {
+    thead>tr>td,
+    tfoot>tr>td,
+    th {
         font-size: 0.85rem;
         color: $greySecondary;
+    }
+    thead,
+    tfoot {
         tr {
             height: 56px;
         }
