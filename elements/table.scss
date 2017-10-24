@@ -1,8 +1,10 @@
 @import "../includes/variables";
 @import "../includes/font";
 table {
+    display: block;
     margin: 0;
-    width: 100%;
+    width: max-content;
+    max-width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
     color: $greyPrimary;
