@@ -62,10 +62,10 @@ card {
   overflow: visible; }
 
 p {
+  margin: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #757575;
-  margin: 16px; }
+  color: #757575; }
 
 h1,
 h2,
@@ -206,21 +206,25 @@ input:not([type="button"]) {
     -webkit-appearance: none;
     -moz-appearance: none; }
 
-details > summary {
-  outline: none;
-  color: #212121;
-  font-size: 1.1rem;
-  line-height: 48px;
-  vertical-align: middle; }
-  details > summary::-webkit-details-marker {
-    display: none; }
-  details > summary::before {
-    padding: 12px;
-    content: "expand_more";
-    font-size: 24px; }
-
-details[open] > summary::before {
-  content: "expand_less"; }
+details {
+  margin-left: 48px; }
+  details > summary {
+    margin-left: -48px;
+    outline: none;
+    color: #212121;
+    font-size: 1.1rem;
+    line-height: 48px;
+    vertical-align: middle; }
+    details > summary::-webkit-details-marker {
+      display: none; }
+    details > summary::before {
+      padding: 12px;
+      content: "expand_more";
+      font-size: 24px; }
+  details[open] > summary {
+    color: var(--colorPrimary); }
+    details[open] > summary::before {
+      content: "expand_less"; }
 
 select {
   outline: none; }

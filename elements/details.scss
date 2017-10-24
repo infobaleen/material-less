@@ -2,7 +2,9 @@
 @import "../includes/variables";
 @import "../includes/font";
 details {
+    margin-left: 48px;
     &>summary {
+        margin-left: -48px;
         outline: none;
         color: $greyPrimary;
         font-size: 1.1rem;
@@ -22,6 +24,7 @@ details {
     }
     &[open] {
         &>summary {
+            color: var(--colorPrimary);
             &::before {
                 content: "expand_less";
             }
