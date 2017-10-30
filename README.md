@@ -47,6 +47,7 @@ The color scheme can be customized CSS variables. Use the `:root` selector to ch
 * `<p>`
 * `<select>`
 * `<table>`
+* `<a>`
 
 
 ### Supported HTML elements with additional attributes

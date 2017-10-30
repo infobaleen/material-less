@@ -236,3 +236,6 @@ details {
 
 select {
   outline: none; }
+
+a {
+  cursor: pointer; }
