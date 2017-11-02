@@ -3,6 +3,7 @@
 @if not global-variable-exists(__import_button__) {
     $__import_button__: true !global;
     %button {
+        position: relative;
         font-family: $fontFamily;
         border: none;
         outline: none;
