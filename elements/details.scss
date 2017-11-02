@@ -4,6 +4,8 @@
 details {
     margin-left: 48px;
     &>summary {
+        cursor: pointer;
+        max-width: max-content;
         margin-left: -48px;
         outline: none;
         color: $greyPrimary;

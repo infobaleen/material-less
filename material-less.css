@@ -218,6 +218,8 @@ input:not([type="button"]) {
 details {
   margin-left: 48px; }
   details > summary {
+    cursor: pointer;
+    max-width: max-content;
     margin-left: -48px;
     outline: none;
     color: #212121;
