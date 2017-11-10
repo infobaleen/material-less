@@ -155,6 +155,8 @@ table {
     height: 56px; }
 
 input:not([type="button"]):not([type]), input[type="color"]:not([type="button"]), input[type="date"]:not([type="button"]), input[type="datetime-local"]:not([type="button"]), input[type="email"]:not([type="button"]), input[type="file"]:not([type="button"]), input[type="month"]:not([type="button"]), input[type="number"]:not([type="button"]), input[type="password"]:not([type="button"]), input[type="tel"]:not([type="button"]), input[type="text"]:not([type="button"]), input[type="url"]:not([type="button"]), input[type="week"]:not([type="button"]), select {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 1.15rem;
   color: #212121; }
   input:disabled:not([type="button"]):not([type]), input[type="color"]:disabled:not([type="button"]), input[type="date"]:disabled:not([type="button"]), input[type="datetime-local"]:disabled:not([type="button"]), input[type="email"]:disabled:not([type="button"]), input[type="file"]:disabled:not([type="button"]), input[type="month"]:disabled:not([type="button"]), input[type="number"]:disabled:not([type="button"]), input[type="password"]:disabled:not([type="button"]), input[type="tel"]:disabled:not([type="button"]), input[type="text"]:disabled:not([type="button"]), input[type="url"]:disabled:not([type="button"]), input[type="week"]:disabled:not([type="button"]), select:disabled {
@@ -215,6 +217,10 @@ input:not([type="button"]) {
     -webkit-appearance: none;
     -moz-appearance: none; }
 
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none; }
+
 details {
   margin-left: 48px; }
   details > summary {
@@ -238,6 +244,7 @@ details {
       content: "expand_less"; }
 
 select {
+  margin: 8px;
   outline: none; }
 
 a {

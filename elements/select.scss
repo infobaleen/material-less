@@ -1,5 +1,6 @@
 @import "../includes/input";
 select {
+    margin: 8px;
     @extend %fontinput;
     outline: none;
     &:not([multiple]) {
