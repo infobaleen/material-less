@@ -1,0 +1,30 @@
+@import "../includes/variables";
+nav {
+    display: flex;
+    &[sticky] {
+        position: sticky;
+        z-index: 255;
+    }
+    top: 0;
+    background-color: var(--colorPrimary);
+    margin: 0;
+    list-style: none;
+    height: 48px;
+    box-shadow: #{$elevation-standard-box-shadow};
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: $fontWeightBold;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+        padding: 0 12px;
+        &:hover,
+        &:focus,
+        &:active {
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .1);
+        }
+    }
+}

@@ -59,6 +59,12 @@ The color scheme can be customized CSS variables. Use the `:root` selector to ch
 | raised | none | raises button |
 | colored | none | colors button in primary color |
 
+#### `<nav>`
+
+| Attribute | Values | Effect |
+| --- | --- | --- |
+| sticky | none | nav sticks to top |
+
 ### New elements:
 
 The following new elements are defined:

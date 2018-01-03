@@ -249,3 +249,27 @@ select {
 
 a {
   cursor: pointer; }
+
+nav {
+  display: flex;
+  top: 0;
+  background-color: var(--colorPrimary);
+  margin: 0;
+  list-style: none;
+  height: 48px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); }
+  nav[sticky] {
+    position: sticky;
+    z-index: 255; }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    padding: 0 12px; }
+    nav a:hover, nav a:focus, nav a:active {
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1); }
