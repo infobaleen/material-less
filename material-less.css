@@ -7,6 +7,7 @@
 
 html {
   color: #757575;
+  background-color: #e0e0e0;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
@@ -58,7 +59,8 @@ card {
   height: auto;
   border-radius: 2px;
   background-color: white;
-  margin: 8px;
+  margin: 16px;
+  padding: 16px;
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   overflow: visible; }
 
@@ -66,7 +68,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #757575;
-  margin: 16px; }
+  margin-bottom: 16px 0 16px 0; }
 
 h1,
 h2,
@@ -74,7 +76,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #212121;
-  margin: 24px 16px 16px 16px; }
+  margin-bottom: 16px 0 16px 0; }
 
 h1 {
   font-size: 1.7rem; }
@@ -84,22 +86,6 @@ h2 {
 
 h3 {
   font-size: 1.1rem; }
-
-hsub {
-  display: block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  margin: 24px 16px 16px 16px;
-  color: #9e9e9e;
-  font-size: 1rem; }
-
-h1 + hsub,
-h2 + hsub,
-h3 + hsub,
-hsub + h1,
-hsub + h2,
-hsub + h3 {
-  margin-top: -10px; }
 
 i, input[type="checkbox"]:not([type="button"])::after, input[type="radio"]:not([type="button"])::after, details > summary::before {
   font-family: 'Material Icons';
@@ -222,20 +208,20 @@ input[type="date"]::-webkit-inner-spin-button {
   -webkit-appearance: none; }
 
 details {
-  margin-left: 48px; }
+  margin: 16px 0 16px 16px; }
   details > summary {
     cursor: pointer;
     max-width: max-content;
-    margin-left: -48px;
+    margin-left: -16px;
     outline: none;
     color: #212121;
     font-size: 1.1rem;
-    line-height: 48px;
+    line-height: 32px;
     vertical-align: middle; }
     details > summary::-webkit-details-marker {
       display: none; }
     details > summary::before {
-      padding: 12px;
+      padding: 4px;
       content: "expand_more";
       font-size: 24px; }
   details[open] > summary {
@@ -273,3 +259,7 @@ nav {
     padding: 0 12px; }
     nav a:hover, nav a:focus, nav a:active {
       box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1); }
+
+hr {
+  border-color: #e0e0e0;
+  margin: 16px 0 16px 0; }

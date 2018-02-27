@@ -5,7 +5,8 @@ card {
     height: auto;
     border-radius: 2px;
     background-color: white;
-    margin: 8px;
+    margin: 16px;
+    padding: 16px;
     box-shadow: #{$elevation-standard-box-shadow};
     overflow: visible; // Prevents margin collapse with children
 }
