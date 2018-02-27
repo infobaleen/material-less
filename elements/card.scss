@@ -7,6 +7,6 @@ card {
     background-color: white;
     margin: 16px;
     padding: 16px;
-    box-shadow: #{$elevation-standard-box-shadow};
+    box-shadow: #{$elevation-high-box-shadow};
     overflow: visible; // Prevents margin collapse with children
 }
