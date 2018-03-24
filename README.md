@@ -2,12 +2,18 @@
 
 Developer friendly, CSS only, no JS, no classes, single file style sheet inspired by Material Design.
 
-This style sheet changes the style of standard HTML5 elements to match the Material Design specification closely.
-New elements are introduced to provide components with no HTML5 equivalent.
+This style sheet changes the style of standard HTML5 elements to look similar to Material Design components.
+New elements are introduced to provide components with no HTML5 equivalents.
 
 ### Dependencies
 
-The style sheet automatically loads the Roboto and Material Icons fonts. There are no other dependencies.
+The only dependency of the style sheet is the Material Icons font, if `<i>` elements are used.
+The corresponding `icons.woff` file can be found in this repository.
+It should be hosted in the same directory as style sheet.
+Alternatively, it may be loaded from Google Web Fonts, by adding the following line to your page header:
+```
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
 
 ## Demo
 
@@ -18,7 +24,7 @@ Have a look at [demo.html](http://htmlpreview.github.io/?https://github.com/info
 Refer to the `material-less.css` style sheet in this repository in the `<head>` element of your HTML document.
 
 ```
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="material-less.css">
 ```
 
 Alternatively you can use `@import "<path>/material-less.scss";` in your own SASS files.
@@ -26,7 +32,7 @@ Individual components can be selectively included using the respective SASS (e.g
 
 ### Customization
 
-The color scheme can be customized CSS variables. Use the `:root` selector to change the color scheme for the whole document:
+The color scheme can be customized via CSS variables. Use the `:root` selector to change the color scheme for the whole document:
 ```
  :root {
         --colorPrimary: red;

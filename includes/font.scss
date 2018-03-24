@@ -1,8 +1,6 @@
 @if not global-variable-exists(__import_font__) {
     $__import_font__: true !global;
-    @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i");
-    $fontFamily: 'Roboto', sans-serif !global;
+    $fontFamily: Helvetica, Arial, sans-serif !global;
     $fontWeightRegular: 400 !global;
-    $fontWeightMedium: 500 !global;
     $fontWeightBold: 700 !global;
 }
