@@ -8,8 +8,7 @@ New elements are introduced to provide components with no HTML5 equivalents.
 ### Dependencies
 
 The only dependency of the style sheet is the Material Icons font, if `<i>` elements are used.
-The corresponding `icons.woff` file can be found in this repository.
-It should be hosted in the same directory as style sheet.
+The corresponding `icons.woff` should be hosted in the same directory as style sheet.
 Alternatively, it may be loaded from Google Web Fonts, by adding the following line to your page header:
 ```
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
