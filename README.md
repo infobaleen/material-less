@@ -85,3 +85,11 @@ Card component. The content blocks defined in the Material Design specification 
 * `<h1>` for primary headings with optional `<hsub>` subtitles before or after the heading.
 * `<p>` for supporting text
 * `<button>` for action buttons.
+
+## License
+
+This work is licensed under Apache License 2.0 and Creative Commons Zero v1.0 Universal.
+You can choose between them if you use, copy, modify or distribute this work.
+
+`SPDX-License-Identifier: Apache-2.0 OR CC0-1.0`
+
